@@ -123,11 +123,10 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
             <div className='login-form'>               
                 <input type="mail" placeholder='Your mail' onChange={mailSet}required/><br/>
                 <input type="password" placeholder='password' required/><br/>
-                 load?<input type='submit' value={'Wait...'} style={{background:"red"}}/>:<input type='submit' onClick={userSet} value={'Login'}/>;
+                { load?<input type='submit' value={'Wait...'} style={{background:"red"}}/>:<input type='submit' onClick={userSet} value={'Login'}/>;}
                 <input type='checkbox'/> I Agree to terms of use and private policy
                 <p>Create a new account ? <span className='color' onClick={registration}>Click here</span></p>             
             </div>
-        
         </div>
         <div className='registration' id="reg">
                <div className='reg'>
@@ -137,7 +136,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                <div className='form'>
                 <input type="mail" onChange={(e)=> setUserName(e.target.value)} placeholder='Your mail' required/><br/>
                 <input type="password" onChange={(e)=> setPassword(e.target.value)} placeholder='password' required/><br/>
-                load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={userSet} value={'Login'}/>;
+                {load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={userSet} value={'Login'}/>}
                 <input type='checkbox'/> I Agree to terms of use and private policy
             </div>
 
