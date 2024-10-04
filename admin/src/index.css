@@ -1,0 +1,235 @@
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.orders-list{
+  border-top:2px solid grey;
+}
+.navBar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 50px;
+  width:100%;
+}
+.navBar .right-nav img{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+}
+.left-nav h1{
+  color:orangered
+}
+.container{
+  width:100%;
+  display: flex;
+  margin:10px 50px;
+}
+.addItem{
+  width: 100%;
+  display: flex;
+}
+.options {
+  width:20%;
+  height:650px;
+  padding: 50px 1px;
+  box-shadow: 5px 5px 10px rgba(0.1,0.1,0.1,0.1);
+  border-right:2px solid grey;
+}
+.options ul{
+  list-style: none;
+  float: right;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  font-size: 20px;
+
+}
+.options ul li{
+  width:200px;
+  border:2px solid grey;
+  padding: 10px 20px;
+  border-radius:20px 0px 0px 20px;
+  cursor: pointer;
+  border-right: none;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageUploader{
+  width:100%;
+  height:650px;
+  margin: 5px 30px;
+  display: flex;
+  border-radius: 10px;
+}
+.imageUploader{
+  width: 100%;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+
+}
+.imageUploader #image{
+  display: none
+}
+.file-label{
+  width:45%;
+  height:150px;
+  background-color: rgb(97, 188, 98);
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 4px;
+}
+.imageUploader input{
+  width:50%;
+  height:40px;
+  padding: 0px 10px;
+  outline: none;
+  border-radius: 10px;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.imageSrc{
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:200px;
+}
+.submitBtn{
+  height: 35px;
+  background-color: orangered;
+  outline:none;
+  border: none;
+  width: 50%;
+}
+.submitBtn:hover{
+  background-color: rgb(236, 101, 47);
+  color: black;
+}
+.listItems{
+  margin: 20px;
+  display: flex;
+  width:50%;
+  flex-direction: column;
+  row-gap: 10px;
+  width:70%;
+}
+.item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap:30px;
+  border: 2px solid red;
+  height: 100px;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.item p{
+  width:100px;
+}
+.item p img{
+  display: flex;
+  align-items: center;
+}
+.updateBtn,.deleteBtn{
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.deleteBtn{
+  background-color: red;
+}
+.orders{
+  width:100%;
+}
+.order .logo{
+  width: 100px;
+  height:80px;
+  color:white;
+}
+.order{
+  width:1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border:2px solid orange;
+  padding:20px 0px;
+  margin:20px 10px;
+}
+.order select{
+  width:200px;
+  height:30px;
+}
+.traceOrderBtn{
+  border:2px solid orangered;
+  padding: 3px 10px;
+  background-color: orange;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width:1040px){
+  .listItems{
+    overflow: scroll;
+    width:90%;
+    height:600px;
+  }
+  .listItems .item{
+    width:700px;
+    
+
+  }
+  .container{
+    width:100%;
+    display: flex;
+    margin:10px 50px;
+    flex-direction: column;
+  }
+  .options{
+    height: 200px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  .options ul{
+   margin-right: 150px;
+   margin-top:-30px;
+  }
+  .options ul li{
+      margin: -10px;
+      border: 2px solid grey;
+      border-radius:20px;
+      background-color: orangered;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+  }
+  .orders-list{
+    overflow: scroll;
+  }
+
+
+
+
+
+}
