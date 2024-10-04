@@ -39,7 +39,7 @@ const AddItem = () => {
       setIsLoading(true);
       const url = await getUrl();
       await axios
-        .post("http://localhost:9800/mychoice/product",{productName,productCategory,productPrice,productDesc,productRating,url})
+        .post("https://mychoice-firebase.vercel.app/mychoice/product",{productName,productCategory,productPrice,productDesc,productRating,url})
         .then((res) => {
           setIsLoading(false);
           navigate("/");

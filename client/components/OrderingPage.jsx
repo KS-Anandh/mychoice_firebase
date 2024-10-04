@@ -14,7 +14,7 @@ const OrderingPage = ({data,user}) => {
              const total=price+price/10
              const status=0
              alert("Successfully Ordered...")
-             axios.post(`http://localhost:9800/mychoice/orders/${user}`,{item,count,total,status})
+             axios.post(`https://mychoice-firebase.vercel.app/mychoice/orders/${user}`,{item,count,total,status})
              .then((res)=>{
                 console.log(res.data)
              })

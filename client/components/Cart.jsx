@@ -9,7 +9,7 @@ const Cart = ({data,user,setData,setChange,nav,setNav}) => {
         amount=amount+item.productPrice;
      })
      const removeCart=(cart)=>{
-          axios.post(`http://localhost:9800/mychoice/users/carts/remove/${user}`,{carts:cart})
+          axios.post(`https://mychoice-firebase.vercel.app/mychoice/users/carts/remove/${user}`,{carts:cart})
           .then((res)=>{
             alert("Item Removed Successfully");
             const carts= data.filter((item)=>{

@@ -20,7 +20,7 @@ const App = () => {
 
   //for loading product to home page
   useEffect(()=>{
-          axios.get("http://localhost:9800/mychoice/products")
+          axios.get("https://mychoice-firebase.vercel.app/mychoice/products")
           .then((res)=>{
               setProducts(res.data)
               setDelay(false)
@@ -32,7 +32,7 @@ const App = () => {
 
   //cart products info
   useEffect(()=>{
-      axios.post(`http://localhost:9800/mychoice/product/ids`,{ids:cart})
+      axios.post(`https://mychoice-firebase.vercel.app/mychoice/product/ids`,{ids:cart})
       .then((res)=>{
           setData(res.data)
       })
@@ -44,7 +44,7 @@ const App = () => {
  
   //all cart ids
   useEffect(()=>{
-    axios.get(`http://localhost:9800/mychoice/users/carts/${user}`)
+    axios.get(`https://mychoice-firebase.vercel.app/mychoice/users/carts/${user}`)
     .then((res)=>{
         setCart(res.data);
     })

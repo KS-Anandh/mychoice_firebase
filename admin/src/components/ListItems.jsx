@@ -7,7 +7,7 @@ const ListItems = () => {
   const [delay,setDelay]=useState(true);
   const[data,setData]=useState([])
   useEffect(()=>{
-     axios.get("http://localhost:9800/mychoice/products")
+     axios.get("https://mychoice-firebase.vercel.app/mychoice/products")
      .then((res)=>{
       setData(res.data)
       setDelay(false)
@@ -18,7 +18,7 @@ const ListItems = () => {
   },[])
 
   const removeProduct=(id)=>{
-    axios.delete(`http://localhost:9800/mychoice/product/id/${id}`)
+    axios.delete(`https://mychoice-firebase.vercel.app/mychoice/product/id/${id}`)
     .then((res)=>{
       console.log(res.data)
       const remaining=data.filter((item)=>{

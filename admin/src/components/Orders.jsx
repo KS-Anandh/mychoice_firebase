@@ -6,7 +6,7 @@ import axios from 'axios'
 const Orders = () => {
     const [orderItems,setOrderItems]=useState([])
     useEffect(()=>{
-        axios.get("http://localhost:9800/mychoice/orders")
+        axios.get("https://mychoice-firebase.vercel.app/mychoice/orders")
         .then((res)=>{
             setOrderItems(res.data)
         })
@@ -16,7 +16,7 @@ const Orders = () => {
     },[])
     var status=0;
      const update=(id)=>{
-        axios.put(`http://localhost:9800/mychoice/orders/admin/update/${id}`,{status})
+        axios.put(`https://mychoice-firebase.vercel.app/mychoice/orders/admin/update/${id}`,{status})
         .then((res)=>{
             alert(res.data)
         })

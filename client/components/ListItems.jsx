@@ -6,7 +6,7 @@ import axios from 'axios'
 const ListItems = ({products,delay,user,setCart}) => { 
 
   const CartPage=(id,name)=>{
-  axios.post(`http://localhost:9800/mychoice/users/carts/${user}`,{carts:id})
+  axios.post(`https://mychoice-firebase.vercel.app/mychoice/users/carts/${user}`,{carts:id})
   .then((res)=>{
     setCart(res.data)
      alert("Item added in Cart");

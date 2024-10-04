@@ -8,7 +8,7 @@ import axios from 'axios'
 
 const Menu = ({setProducts}) => {
     const category=(category)=>{
-         axios.get(`http://localhost:9800/mychoice/product/category/${category}`)
+         axios.get(`https://mychoice-firebase.vercel.app/mychoice/product/category/${category}`)
          .then((res)=>{
             setProducts(res.data)
 
