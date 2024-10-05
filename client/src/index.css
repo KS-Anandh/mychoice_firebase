@@ -694,7 +694,7 @@ display: block;
   width: 25px;
   height:25px;
 }
-.form input[type="mail"],[type="password"]{
+.form input{
   height:35px;
   outline: none;
   border:1px solid grey;
