@@ -13,7 +13,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
     const [load,setLoad]=useState(false);
     const mailSet=(e)=>{ setMail(e.target.value)}
     const loginClose=()=>{
-            alert("Without Login We can't access web and if account not exits create new one by new Acoount Create in Below ")
+            alert("Login is Required and Testing:'username:anandh password:123456' ")
     }
     const Close=()=>{
         const btn=document.getElementById('login')
@@ -63,6 +63,12 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
         btn.classList.add('active')
         const btn2=document.getElementById('login')
         btn2.classList.remove('active')
+    }
+    const backToReg=()=>{
+        const btn=document.getElementById('reg')
+        btn.classList.remove('active')
+        const btn2=document.getElementById('login')
+        btn2.classList.add('active')
     }
     const RegSub=()=>{
         if(userName!=null && password!=null && userName!=" " && password!=" "){
@@ -131,7 +137,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
         <div className='registration' id="reg">
                <div className='reg'>
                 <h2>Registration</h2>
-                <img src={cross}  />
+                <img src={cross} onClick={backToReg} />
               </div>
                <div className='form'>
                 <input type="mail" onChange={(e)=> setUserName(e.target.value)} placeholder='Your mail' required/><br/>
