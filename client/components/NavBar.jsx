@@ -13,7 +13,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
     const [load,setLoad]=useState(false);
     const mailSet=(e)=>{ setMail(e.target.value)}
     const loginClose=()=>{
-            alert("Login is Required and Testing:'username:anandh password:123456' ")
+            alert("Login is Required,if account doesn't exist register then login ")
     }
     const Close=()=>{
         const btn=document.getElementById('login')
@@ -131,7 +131,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                 <input type="password" placeholder='password' required/><br/>
                 { load?<input type='submit' value={'Wait...'} style={{background:"red"}}/>:<input type='submit' onClick={userSet} value={'Login'}/>}
                 <input type='checkbox'/> I Agree to terms of use and private policy
-                <p>Create a new account ? <span className='color' onClick={registration}>Click here</span></p>             
+                <p>Create a new account ? <span className='color' onClick={registration}>Register</span></p>             
             </div>
         </div>
         <div className='registration' id="reg">
