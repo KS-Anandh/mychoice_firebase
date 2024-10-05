@@ -143,8 +143,8 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                 <input type="text" placeholder='Your Name'/><br/>
                 <input type="mail" onChange={(e)=> setUserName(e.target.value)} placeholder='Your mail' required/><br/>
                 <input type="password" onChange={(e)=> setPassword(e.target.value)} placeholder='Your Password' required/><br/>
-                {load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={RegSub} value={'Register'}/>}
                 <input type='checkbox'/> I Agree to terms of use and private policy
+                {load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={RegSub} value={'Register'}/>}
             </div>
 
     </div>
