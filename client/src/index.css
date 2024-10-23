@@ -709,6 +709,10 @@ display: block;
   padding: 0px 10px;;
   margin: 10px 0px;;
 }
+.form input[type="password"]{
+  margin-bottom:10px;
+}
+
 .form input[type="submit"]{
   height:35px;
   border:1px solid grey;
@@ -717,7 +721,7 @@ display: block;
   margin: 10px 0px;
   background-color: orangered;
   color:white ;
-  margin-bottom: 20px;
+  margin: 20px 0px;
   cursor: pointer;
 }
 .cartsHeader{
