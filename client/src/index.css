@@ -710,7 +710,7 @@ display: block;
   margin: 10px 0px;;
 }
 .form input[type="password"]{
-  margin-bottom:20px;
+  margin-bottom:15px;
 }
 
 .form input[type="submit"]{
@@ -721,7 +721,7 @@ display: block;
   margin: 10px 0px;
   background-color: orangered;
   color:white ;
-  margin: 20px 0px;
+  margin:15px 0px;
   cursor: pointer;
 }
 .cartsHeader{
