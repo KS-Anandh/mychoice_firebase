@@ -31,7 +31,7 @@ const Cart = ({data,user,setData,setChange,nav,setNav}) => {
         {<h2 className='cartPlus' onClick={()=>{setNav('home')}}><Link to="/" className='cartPlus'>+</Link></h2>}
         </div>
         <div className="cart-table">        
-            <table>
+            {data.length!=0?(<table>
                 <thead>
                     <tr>
                         <th>Item</th>
@@ -58,7 +58,7 @@ const Cart = ({data,user,setData,setChange,nav,setNav}) => {
                 })
                  }                   
                 </tbody>
-            </table>
+            </table>):<center>No Carts Yet</center>}
         </div>
         <div className="cart-info">
             <div className='amount-info'>
