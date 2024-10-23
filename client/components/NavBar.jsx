@@ -143,7 +143,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                 <input type="text" placeholder='Your Name'/><br/>
                 <input type="mail" onChange={(e)=> setUserName(e.target.value)} placeholder='Your mail' required/><br/>
                 <input type="password" onChange={(e)=> setPassword(e.target.value)} placeholder='Your Password' required/><br/>
-                <input type='checkbox' style={{color:"grey"}}/> I agree with terms and privacy policy
+                <input type='checkbox'/><span style={{color:"grey"}}> I agree with terms and privacy policy</span>
                 {load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={RegSub} value={'Register'}/>}
             </div>
 
