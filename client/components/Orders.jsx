@@ -46,6 +46,7 @@ const Orders = ({user,nav,setNav}) => {
         <h2 style={{padding:"0px 0px 20px 0px"}}>Orders:</h2>
         {<h2 className='cartPlus' onClick={()=>{setNav('Orders')}}><Link to="/carts" className='cartPlus'>+</Link></h2>}
         </div>
+      {orderItems.length==0?<center>No Orders Yet</center>:""}
         <div className='order-container'>
           {  orderItems.map((item,id)=>{
               return <>
