@@ -130,7 +130,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                 <input type="mail" placeholder='Your mail' onChange={mailSet}required/><br/>
                 <input type="password" placeholder='password' required/><br/>
                 { load?<input type='submit' value={'Wait...'} style={{background:"red"}}/>:<input type='submit' onClick={userSet} value={'Login'}/>}
-                <input type='checkbox'/> I Agree to terms of use and private policy
+                <input type='checkbox'/>I agree with terms and privacy policy
                 <p>Create a new account ? <span className='color' onClick={registration}>Register</span></p>             
             </div>
         </div>
@@ -143,7 +143,7 @@ const NavBar = ({user,setUser,userInfo,nav,setNav}) => {
                 <input type="text" placeholder='Your Name'/><br/>
                 <input type="mail" onChange={(e)=> setUserName(e.target.value)} placeholder='Your mail' required/><br/>
                 <input type="password" onChange={(e)=> setPassword(e.target.value)} placeholder='Your Password' required/><br/>
-                <input type='checkbox'/> I Agree to terms of use and private policy
+                <input type='checkbox'/>I agree with terms and privacy policy
                 {load?<input type='submit' value={'wait...'}/>:<input type='submit' onClick={RegSub} value={'Register'}/>}
             </div>
 
